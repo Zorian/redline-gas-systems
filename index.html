@@ -284,7 +284,7 @@
       <a href="#services">Services</a>
       <a href="#work">Our Work</a>
       <a href="#faq">FAQ</a>
-      <a href="tel:+442080641234" class="cta-btn">Call Us Now — 020 8064 1234</a>
+      <a href="tel:+442080644083" class="cta-btn">Call Us Now — 020 8064 4083</a>
     </nav>
   </div>
 </header>
@@ -296,7 +296,7 @@
       <h1>Gas systems built to sit in the <span class="hl">safe zone</span>, not the redline.</h1>
       <p>Gas detection interlocks, boiler plant controls and emergency shutoff systems for commercial buildings — designed, installed and commissioned by BMS engineers.</p>
       <div class="hero-ctas">
-        <a href="tel:+442080641234" class="cta-btn">Call Us Now — 020 8064 1234</a>
+        <a href="tel:+442080644083" class="cta-btn">Call Us Now — 020 8064 4083</a>
         <a class="btn-outline" href="#callout">Request a callout</a>
       </div>
       <div class="emergency-strip">
@@ -466,7 +466,7 @@
           <li><div><strong>You get a fixed quote</strong>Agreed with you before any work starts.</div></li>
         </ol>
         <p class="co-promise">Emergency requests get a call back straight away, 24/7. Everything else, the same working day.</p>
-        <a class="co-call" href="tel:+442080641234">Prefer to talk? Call 020 8064 1234</a>
+        <a class="co-call" href="tel:+442080644083">Prefer to talk? Call 020 8064 4083</a>
       </div>
       <div id="co-wrap">
         <form name="redline-callout" method="POST" data-netlify="true" netlify-honeypot="company-website" enctype="multipart/form-data" action="https://redline-gas-systems.netlify.app/" id="co-form">
@@ -518,7 +518,7 @@
 <footer>
   <div class="wrap" style="display:flex;justify-content:space-between;align-items:center;width:100%;flex-wrap:wrap;gap:16px;">
     <div>© 2026 Redline Gas Systems</div>
-    <div>020 8064 1234 · 24/7 Emergency Callout</div>
+    <div>020 8064 4083 · 24/7 Emergency Callout</div>
   </div>
 </footer>
 
@@ -527,14 +527,14 @@
 (function(){
   var f=document.getElementById('co-form');if(!f)return;
   var wrap=document.getElementById('co-wrap');
-  function done(){wrap.innerHTML='<div class="co-done" role="status" tabindex="-1"><h3>Request received</h3><p>An engineer will call you back shortly. For anything urgent in the meantime, call 020 8064 1234.</p></div>';wrap.firstChild.focus();}
+  function done(){wrap.innerHTML='<div class="co-done" role="status" tabindex="-1"><h3>Request received</h3><p>An engineer will call you back shortly. For anything urgent in the meantime, call 020 8064 4083.</p></div>';wrap.firstChild.focus();}
   if(location.search.indexOf('sent=1')>-1){done();return;}
   f.addEventListener('submit',function(e){
     e.preventDefault();var b=f.querySelector('.co-submit');b.disabled=true;b.textContent='Sending...';
     var old=f.querySelector('.co-err');if(old)old.remove();
     fetch('https://redline-gas-systems.netlify.app/',{method:'POST',mode:'no-cors',body:new FormData(f)}).then(function(){done();}).catch(function(){
       b.disabled=false;b.textContent='Request a callout';
-      var p=document.createElement('p');p.className='co-err';p.textContent='That didn\'t send. Check your connection and try again, or call 020 8064 1234.';f.appendChild(p);
+      var p=document.createElement('p');p.className='co-err';p.textContent='That didn\'t send. Check your connection and try again, or call 020 8064 4083.';f.appendChild(p);
     });
   });
 })();
